@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo">
-          <img src="img/logo.svg" width="150px" height="120px" alt="Логотип">
+          <img src="img/logo.svg" width="150" height="120" alt="Логотип">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -26,7 +26,7 @@
         <img src="img/top-image.jpg" width="1024" height="768" alt="Изображение каньона">
       </p>
       <section class="features">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="feature-item feature-item">
             <h3 class="feature-title">Настоящий городок</h3>
@@ -72,7 +72,7 @@
         </ul>
       </section>
       <section class="products">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Товары</h2>
         <ul>
           <li class="product-item">
             <h3>Жилье</h3>
@@ -86,9 +86,10 @@
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
+        </ul>
       </section>
       <p class="map">
-        <img src="img/map-image.jpg">
+        <img src="img/map-image.jpg" width="500" height="300" alt="Карта">
       </p>
       <p class="search-title">
         <b>Заинтересовались?</b>
@@ -99,26 +100,27 @@
         </a>
       </p>
       <section class="search-form">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Поиск отеля</h2>
         <form action="/echo" method="post">
           <p class="search-item">
             <label for="date-in">Дата заезда:</label>
-            <input type="date" name="date-in" placeholder="24 апреля 2017" >
+            <input type="date" id="date-in">
           </p>
           <p class="search-item">
             <label for="date-out">Дата выезда:</label>
-            <input type="date" name="date-out" placeholder="4 июля 2017">
+            <input type="date" id="date-out">
           </p>
           <p class="search-item">
             <label for="grown">Взрослые:</label>
-            <input type="number" name="grown" min="1">
+            <input type="number" id="grown" min="1">
           </p>
           <p class="search-item">
             <label for="kid">Дети:</label>
-            <input type="number" name="kid" min="0">
+            <input type="number" id="kid" min="0">
           </p>
           <button class="button" type="submit">Найти</button>
-      </search>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -133,7 +135,7 @@
       <p class="footer-logo">
         <b>Website by</b>
         <a class="button" href="https://htmlacademy.ru">
-          <img src="img/logo.html">
+          <img src="img/logo.html" width="50" height="30" alt="HTML Academy">
         </a>
       </p>
 
