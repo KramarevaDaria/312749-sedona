@@ -7,9 +7,6 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="150" height="120" alt="Логотип">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
@@ -17,129 +14,103 @@
           <li><a>Гостиницы</a></li>
         </ul>
       </nav>
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="150" height="120" alt="Логотип">
+      </a>
     </header>
-
     <main class="conteiner">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="/echo" method="get">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
-                  Бассейн
-                </label>
-              </li>
-              <li  class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="parking">
-                  Парковка
-                </label>
-              </li>
-              <li class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
-                  Wi-fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
-                  Гостиница
-                </label>
-              </li>
-              <li class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
-                  Мотель
-                </label>
-              </li>
-              <li class="filter-item">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <p class="filter-item-cost">
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+            Бассейн
+          </label>
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="parking">
+            Парковка
+          </label>
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+            Wi-fi
+          </label>
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+            Гостиница
+          </label>
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+            Мотель
+          </label>
+          <label>
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+            Апартаменты
+          </label>
+          <div class="filter-item-cost">
             Стоимость в сутки (р):
             От 0 до 3000 <input type="range" name="dayscount" min="0" max="3000">
-          </p>
+          </div>
           <button type="submit" class="button filter-button">Показать</button>
         </form>
-      </section>
-      <section class="search">
+      <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p>Найдено:</p>
-        <p>Сортировка:</p>
-        <p>
-          <a href="#">по цене</a>
-        </p>
-        <p>
-          <a href="#">по типу</a>
-        </p>
-        <p>
-          <a href="#">по рейтингу</a>
-        </p>
-        <p>
-          <a class="search-button-up" href="#">По возрастанию</a>
-        </p>
-        <p>
-          <a class="search-button-down" href="#">По убыванию</a>
-        </p>
+        <div class="sorting">
+          <span>Найдено:</span>
+          <span>Сортировка:</span>
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по рейтингу</a>
+            <a class="sorting-button-up" href="#">По возрастанию</a>
+            <a class="sorting-button-down" href="#">По убыванию</a>
+        </div>
         <ul>
-          <li class="search-item">
-            <h3>Amara resort & spa</h3>
-            <p>Гостиница</p>
-            <p>от 4000</p>
-            <p class="search-item-image">
-              <img src="http://placehold.it/150x100" alt="Гостиница Amara resort & spa">
-            </p>
-            <p>
+          <li class="result-item">
+            <img src="http://placehold.it/150x100" alt="Гостиница Amara resort &amp; spa">
+            <h3>Amara resort &amp; spa</h3>
+            <div class="type-and-price">
+              <span>Гостиница</span>
+              <span>от 4000</span>
+            </div>
+            <div class="result-buttons">
               <a href="#">Подробнее</a>
-            </p>
-            <button type="submit" name="button">Забронировать</button>
-            <p>Рейтинг: 8,5</p>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="result-rating">
+              <p>Рейтинг: 8,5</p>
+            </div>
           </li>
-          <li class="search-item">
+          <li class="result-item">
+            <img src="http://placehold.it/150x100" alt="Мотель Desert Quail Inn">
             <h3>Desert Quail Inn</h3>
-            <p>Мотель</p>
-            <p>от 3000</p>
-            <p class="search-item-image">
-              <img src="http://placehold.it/150x100" alt="Мотель Desert Quail Inn">
-            </p>
-            <p>
+            <div class="type-and-price">
+              <span>Мотель</span>
+              <span>от 3000</span>
+            </div>
+            <div class="result-buttons">
               <a href="#">Подробнее</a>
-            </p>
-            <button type="submit" name="button">Забронировать</button>
-            <p>Рейтинг: 8,9</p>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="result-rating">
+              <p>Рейтинг: 8,9</p>
+            </div>
           </li>
-          <li class="search-item">
+          <li class="result-item">
+            <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
             <h3>Villas at poco diablo</h3>
-            <p>Апартаменты</p>
-            <p>от 2000</p>
-            <p class="search-item-image">
-              <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
-            </p>
-            <p>
+            <div class="type-and-price">
+              <span>Апартаменты</span>
+              <span>от 2000</span>
+            </div>
+            <div class="result-buttons">
               <a href="#">Подробнее</a>
-            </p>
-            <button type="submit" name="button">Забронировать</button>
-            <p>Рейтинг: 9,2</p>
+              <a href="#">Забронировать</a>
+            </div>
+            <div class="result-rating">
+              <p>Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
-
     <footer class="main-footer">
       <p class="footer-invitation">
         #Visit Sedona
@@ -150,13 +121,11 @@
         <a class="social social-ytb" href="https://www.youtube.com/">Ютуб</a>
       </p>
       <p class="footer-logo">
-        <b>Website by</b>
+        <p>Website by</p>
         <a class="button" href="https://htmlacademy.ru">
           <img src="http://placehold.it/100x70" alt="HTML Academy">
         </a>
       </p>
-
     </footer>
-
   </body>
 </html>
