@@ -21,37 +21,47 @@
     </header>
     <main class="conteiner">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
-        <form class="filter" action="/echo" method="get">
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
-            Бассейн
-          </label>
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="parking">
-            Парковка
-          </label>
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
-            Wi-fi
-          </label>
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
-            Гостиница
-          </label>
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
-            Мотель
-          </label>
-          <label>
-            <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
-            Апартаменты
-          </label>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter-hotel" action="/echo" method="get">
+          <fieldset class="filter-hotel-infrastructure">
+            <legend>Инфраструктура</legend>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+              Бассейн
+            </label>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="parking">
+              Парковка
+            </label>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+              Wi-fi
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+              Гостиница
+            </label>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+              Мотель
+            </label>
+            <label>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+              Апартаменты
+            </label>
+          </fieldset>
           <div class="filter-item-cost">
-            Стоимость в сутки (р):
-            От 0 до 3000 <input type="range" name="dayscount" min="0" max="3000">
+            <p>Стоимость в сутки (р):</p>
+            От 0 до 3000
+            <input type="range" name="dayscount" min="0" max="3000">
+            <button type="submit" class="button filter-button">Показать</button>
           </div>
-          <button type="submit" class="button filter-button">Показать</button>
         </form>
+      </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
         <div class="sorting-items">
@@ -76,7 +86,7 @@
           <a href="#">Забронировать</a>
         </div>
         <div class="result-rating">
-          <p>Рейтинг: 8,5</p>
+          <span>Рейтинг: 8,5</span>
         </div>
       </section>
       <section class="result">
@@ -91,7 +101,7 @@
           <a href="#">Забронировать</a>
         </div>
         <div class="result-rating">
-          <p>Рейтинг: 8,9</p>
+          <span>Рейтинг: 8,9</span>
         </div>
       </section>
       <section class="result">
@@ -106,7 +116,7 @@
           <a href="#">Забронировать</a>
         </div>
         <div class="result-rating">
-          <p>Рейтинг: 9,2</p>
+          <span>Рейтинг: 9,2</span>
         </div>
       </section>
     </main>
@@ -114,17 +124,19 @@
       <p class="footer-invitation">
         #Visit Sedona
       </p>
-      <p class="footer-social">
-        <a class="social social-tw" href="http://twitter.com">Твиттер</a>
-        <a class="social social-fb" href="http://www.facebook.com">Фейсбук</a>
-        <a class="social social-ytb" href="https://www.youtube.com/">Ютуб</a>
-      </p>
-      <p class="footer-logo">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social social-tw" href="http://twitter.com">Твиттер</a></li>
+          <li><a class="social social-fb" href="http://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social social-ytb" href="https://www.youtube.com/">Ютуб</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
         <p>Website by</p>
         <a class="button" href="https://htmlacademy.ru">
           <img src="http://placehold.it/100x70" alt="HTML Academy">
         </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>

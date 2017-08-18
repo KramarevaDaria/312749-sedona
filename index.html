@@ -23,98 +23,107 @@
       <div class="top-image">
         <img src="http://placehold.it/150x100"  alt="Изображение каньона">
       </div>
-      <div class="title-and-reason">
+      <section class="title-and-reason">
         <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
-      </div>
-      <div class="feature-town">
+      </section>
+      <section class="feature-town">
         <h2>Настоящий городок</h2>
-          <span>-№1-</span>
+          <span>&ndash;№1&ndash;</span>
           <p>
             Седона - не аттракцион для туристов, там течет своя жизнь!
           </p>
           <p>
             <img src="http://placehold.it/150x100" alt="Там течет своя жизнь">
           </p>
-      </div>
-      <ul class="products">
-        <li class="product-item">
-          <h2>Жилье</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="product-item">
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="product-item">
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-      <div class="feature-bridge">
+      </section>
+      <section class="products">
+        <h2 class="visually-hidden">Седона рекомендует</h2>
+        <ul>
+          <li class="product-item">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="product-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="product-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="feature-bridge">
+        <h2 class="visually-hidden">Мост</h2>
         <img src="http://placehold.it/150x100" alt="Мост дьявола">
-        <h2>Там есть мост дьявола</h2>
-        <span>-№2-</span>
+        <h3>Там есть мост дьявола</h3>
+        <span>&ndash;№2&ndash;</span>
         <p>
           Да, по нему можно пройти! Eсли конечно, вы осмелитесь
         </p>
-      </div>
-      <ul class="features-list">
-        <li class="feature-item">
-          <h2 class="feature-title">Небольшая площадь</h2>
-          <span>-№3-</span>
-          <p>
-            Все достопримеча- тельности находятся очень близко
-          </p>
-        </li>
-        <li class="feature-item">
-          <h2 class="feature-title">Красивая дорога</h2>
-          <span>-№4-</span>
-          <p>
-            Ехать в седону из Лас-Вегаса совсем не скучно!
-          </p>
-        </li>
-        <li class="feature-item">
-          <h2 class="feature-title">Мало туристов</h2>
-          <span>-№5-</span>
-          <p>
-            Большинство едет в Гранд Каньон и толпится там
-          </p>
-        </li>
-      </ul>
-      <div class="search">
-        <p class="search-title">
+      </section>
+      <section class="features-list">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <ul>
+          <li class="feature-item">
+            <h3 class="feature-title">Небольшая площадь</h3>
+            <span>&ndash;№3&ndash;</span>
+            <p>
+              Все достопримеча- тельности находятся очень близко
+            </p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Красивая дорога</h3>
+            <span>&ndash;№4&ndash;</span>
+            <p>
+              Ехать в седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Мало туристов</h3>
+            <span>&ndash;№5&ndash;</span>
+            <p>
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="visually-hidden">Поиск</h2>
+        <div class="search-title">
           <p>Заинтересовались?</p>
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
         <button class="search-button">Поиск гостиницы в Седоне</button>
-      </div>
-      <div class="search-form">
-        <form action="/echo" method="post">
-          <p class="search-item">
-            <label>Дата заезда:
-              <input type="date" name="date-in">
-            </label>
-          </p>
-          <p class="search-item">
-            <label>Дата выезда:
-              <input type="date" name="date-out">
-            </label>
-          </p>
-          <p class="search-item">
-            <label>Взрослые:
-              <input type="number" name="grown" min="1">
-            </label>
-          </p>
-          <p class="search-item">
-            <label>Дети:
-              <input type="number" name="kid" min="0">
-            </label>
-          </p>
-          <button class="button" type="submit">Найти</button>
-        </form>
-      </div>
+        </div>
+        <section class="search-form">
+          <h2 class="visually-hidden">Форма поиска</h2>
+          <form action="/echo" method="post">
+            <p class="search-item">
+              <label>Дата заезда:
+                <input type="date" name="date-in">
+              </label>
+            </p>
+            <p class="search-item">
+              <label>Дата выезда:
+                <input type="date" name="date-out">
+              </label>
+            </p>
+            <p class="search-item">
+              <label>Взрослые:
+                <input type="number" name="grown" min="1">
+              </label>
+            </p>
+            <p class="search-item">
+              <label>Дети:
+                <input type="number" name="kid" min="0">
+              </label>
+            </p>
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </section>
+      </section>
       <div class="map">
         <img src="http://placehold.it/150x100" alt="Карта">
       </div>
@@ -123,17 +132,19 @@
       <p class="footer-invitation">
         #Visit Sedona
       </p>
-      <ul class="footer-social">
-        <li><a class="social social-tw" href="http://twitter.com">Твиттер</a></li>
-        <li><a class="social social-fb" href="http://www.facebook.com">Фейсбук</a></li>
-        <li><a class="social social-ytb" href="https://www.youtube.com/">Ютуб</a></li>
-      </ul>
-      <p class="footer-logo">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social social-tw" href="http://twitter.com">Твиттер</a></li>
+          <li><a class="social social-fb" href="http://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social social-ytb" href="https://www.youtube.com/">Ютуб</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
         <p>Website by</p>
         <a class="button" href="https://htmlacademy.ru">
           <img src="http://placehold.it/100x70" alt="HTML Academy">
         </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>
