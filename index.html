@@ -28,14 +28,14 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
       </section>
       <section class="feature-town">
-        <h2>Настоящий городок</h2>
-          <span>&ndash;№1&ndash;</span>
-          <p>
-            Седона - не аттракцион для туристов, там течет своя жизнь!
-          </p>
-          <p>
-            <img src="http://placehold.it/150x100" alt="Там течет своя жизнь">
-          </p>
+        <div class="feature-town-text">
+          <h2>Настоящий городок</h2>
+          <p>&ndash;№1&ndash;</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь!</p>
+        </div>
+        <div class="feature-town-image">
+          <img src="http://placehold.it/150x100" alt="Там течет своя жизнь">
+        </div>
       </section>
       <section class="products">
         <h2 class="visually-hidden">Седона рекомендует</h2>
@@ -55,34 +55,37 @@
         </ul>
       </section>
       <section class="feature-bridge">
-        <h2 class="visually-hidden">Мост</h2>
-        <img src="http://placehold.it/150x100" alt="Мост дьявола">
-        <h3>Там есть мост дьявола</h3>
-        <span>&ndash;№2&ndash;</span>
-        <p>
-          Да, по нему можно пройти! Eсли конечно, вы осмелитесь
-        </p>
+        <div class="feature-bridge-image">
+          <img src="http://placehold.it/150x100" alt="Мост дьявола">
+        </div>
+        <div class="feature-bridge-text">
+          <h3>Там есть мост дьявола</h3>
+          <p>&ndash;№2&ndash;</p>
+          <p>
+            Да, по нему можно пройти! Eсли конечно, вы осмелитесь
+          </p>
+        </div>
       </section>
       <section class="features-list">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul>
           <li class="feature-item">
             <h3 class="feature-title">Небольшая площадь</h3>
-            <span>&ndash;№3&ndash;</span>
+            <p>&ndash;№3&ndash;</p>
             <p>
               Все достопримеча- тельности находятся очень близко
             </p>
           </li>
           <li class="feature-item">
             <h3 class="feature-title">Красивая дорога</h3>
-            <span>&ndash;№4&ndash;</span>
+            <p>&ndash;№4&ndash;</p>
             <p>
               Ехать в седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="feature-item">
             <h3 class="feature-title">Мало туристов</h3>
-            <span>&ndash;№5&ndash;</span>
+            <p>&ndash;№5&ndash;</p>
             <p>
               Большинство едет в Гранд Каньон и толпится там
             </p>
@@ -92,37 +95,34 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск</h2>
         <div class="search-title">
-          <p>Заинтересовались?</p>
-          Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="search-button">Поиск гостиницы в Седоне</button>
         </div>
-        <section class="search-form">
-          <h2 class="visually-hidden">Форма поиска</h2>
-          <form action="/echo" method="post">
-            <p class="search-item">
-              <label>Дата заезда:
-                <input type="date" name="date-in">
-              </label>
-            </p>
-            <p class="search-item">
-              <label>Дата выезда:
-                <input type="date" name="date-out">
-              </label>
-            </p>
-            <p class="search-item">
-              <label>Взрослые:
-                <input type="number" name="grown" min="1">
-              </label>
-            </p>
-            <p class="search-item">
-              <label>Дети:
-                <input type="number" name="kid" min="0">
-              </label>
-            </p>
-            <button class="button" type="submit">Найти</button>
-          </form>
-        </section>
+        <form action="/echo" method="post">
+          <p class="search-item">
+            <label>Дата заезда:
+              <input type="date" name="date-in">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>Дата выезда:
+              <input type="date" name="date-out">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>Взрослые:
+              <input type="number" name="grown" min="1">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>Дети:
+              <input type="number" name="kid" min="0">
+            </label>
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
       <div class="map">
         <img src="http://placehold.it/150x100" alt="Карта">
@@ -140,7 +140,7 @@
         </ul>
       </div>
       <div class="footer-logo">
-        <p>Website by</p>
+        Website by
         <a class="button" href="https://htmlacademy.ru">
           <img src="http://placehold.it/100x70" alt="HTML Academy">
         </a>
