@@ -1,7 +1,6 @@
 
 body {
   font-size: 14px;
-  font-weight: normal;
   font-family: "PT Sans", sans-serif;
   line-height: 21px;
   color: #333333;
@@ -14,7 +13,7 @@ h1.main-title {
 }
 h3.product-title {
   font-size: 21px;
-  line-height:21px;
+  line-height: 21px;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
