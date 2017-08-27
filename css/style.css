@@ -107,14 +107,26 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 .background-top {
+  position: relative;
   width: 100%;
   height: 510px;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
+  background-position: center 20%;
 }
 .background-top::before {
   content: url("../img/top-words.png");
-  background-position: center;
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 370px;
+}
+.background-top::after {
+  content: url("../img/top-mask.png");
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left:0;
 }
 .title-and-reason {
   text-align: center;
