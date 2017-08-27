@@ -14,8 +14,8 @@
   font-style: normal;
 }
 body {
-  min-width: 1200px;
-  min-height: 2760px;
+  width: 1280px;
+  height: 2760px;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -107,16 +107,14 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 .background-top {
-  position: relative;
   width: 100%;
   height: 510px;
   background-image: url("../img/background-main.jpg");
+  background-repeat: no-repeat;
 }
 .background-top::before {
   content: url("../img/top-words.png");
-  position: absolute;
-  top: 80px;
-  left: 405px;
+  background-position: center;
 }
 .title-and-reason {
   text-align: center;
