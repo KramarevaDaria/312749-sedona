@@ -1,25 +1,9 @@
-
-@font-face {
-    font-family: 'pt_sansbold';
-    src: url('../fonts/pt_sans_bold-webfont.woff2') format('woff2'),
-         url('../fonts/pt_sans_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'pt_sansregular';
-  src: url('../fonts/pt_sans_regular-webfont.woff2') format('woff2'),
-       url('../fonts/pt_sans_regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   width: 1280px;
-  height: 2760px;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "pt_sansregular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
   color: #333;
   background-color: #f2f2f2;
@@ -30,8 +14,6 @@ a {
 }
 .wrapper {
   width: 1200px;
-  margin: 0;
-  padding: 0;
   background-color: #fff;
 }
 .button {
@@ -73,20 +55,23 @@ a {
   line-height: 26px;
 }
 .title-and-reason h1 {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
 }
 .product-list h3,
 .feature-list h3 {
-  font-family: "pt_sansbold" , "Arial", sans-serif;
+  font-family: "PT Sans" , "Arial", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 21px;
   color: #000;
 }
 .main-nav {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
 }
@@ -109,7 +94,7 @@ a {
 .background-top {
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 508px;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
   background-position: center 20%;
@@ -118,15 +103,17 @@ a {
   content: url("../img/top-words.png");
   display: block;
   position: absolute;
-  top: 75px;
-  left: 370px;
+  top: 76px;
+  left: 371px;
 }
 .background-top::after {
   content: url("../img/top-mask.png");
   display: block;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   left:0;
+  width: 100%;
+  height: 57px;
 }
 .title-and-reason {
   text-align: center;
@@ -151,26 +138,29 @@ a {
   text-align: center;
 }
 .search h2 {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: bold;
   line-height: 36px;
   color: #000;
 }
 .search-text {
-  font-family: "pt_sansregular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #333;
 }
 .search-item {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
 }
 .search-item input {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
   background-color: #f2f2f2;
@@ -187,8 +177,9 @@ a {
   background-color: #fff;
 }
 .footer-invitation{
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
 }
 .footer-social ul {
@@ -201,18 +192,21 @@ a {
   color: #fff;
   background-color: #81b3d2;
   background-image: url("../img/background-inner.jpg");
-  background-position: top center;
+  background-position: center 20%;
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 .filter fieldset {
   border: none;
 }
 .filter legend {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 16px;
 }
 .filter-item-cost p {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 16px;
 }
 .filter-item-cost input {
@@ -221,8 +215,9 @@ a {
   background-color: transparent;
 }
 .sorting-result {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
 }
@@ -249,8 +244,9 @@ a {
   color: #000;
 }
 .result-hotel {
-  font-family: "pt_sansbold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   color: #000;
 }
@@ -260,4 +256,10 @@ a {
 }
 .result-hotel:active {
   color: #cacaca;
+}
+.site-navigation {
+  display: flex;
+}
+.site-navigation li{
+  flex-basis: 240px;
 }
