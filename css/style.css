@@ -14,11 +14,12 @@
   font-style: normal;
 }
 body {
-  width: 1280px;
+  min-width: 1200px;
+  min-height: 2760px;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "pt_sansregular", "PT Sans", sans-serif;
+  font-family: "pt_sansregular", "Arial", sans-serif;
   line-height: 21px;
   color: #333;
   background-color: #f2f2f2;
@@ -28,7 +29,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -72,20 +73,20 @@ a {
   line-height: 26px;
 }
 .title-and-reason h1 {
-  font-family: "pt_sansbold", "PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #000;
 }
 .product-list h3,
 .feature-list h3 {
-  font-family: "pt_sansbold" ,"PT Sans", sans-serif;
+  font-family: "pt_sansbold" , "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000;
 }
 .main-nav {
-  font-family: "pt_sansbold", "PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   line-height: 26px;
   color: #000;
 }
@@ -105,9 +106,17 @@ a {
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.2);
 }
-.title-and-reason::before {
-  content: url("../img/background-main.jpg");
-  z-index: 100;
+.background-top {
+  position: relative;
+  width: 100%;
+  height: 510px;
+  background-image: url("../img/background-main.jpg");
+}
+.background-top::before {
+  content: url("../img/top-words.png");
+  position: absolute;
+  top: 80px;
+  left: 405px;
 }
 .title-and-reason {
   text-align: center;
@@ -132,25 +141,25 @@ a {
   text-align: center;
 }
 .search h2 {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000;
 }
 .search-text {
-  font-family: "pt_sansregular", "PT Sans", sans-serif;
+  font-family: "pt_sansregular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #333;
 }
 .search-item {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000;
 }
 .search-item input {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000;
@@ -168,7 +177,7 @@ a {
   background-color: #fff;
 }
 .footer-invitation{
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
 }
@@ -185,12 +194,15 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.filter fieldset {
+  border: none;
+}
 .filter legend {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 16px;
 }
 .filter-item-cost p {
-  font-family: "pt_sansbold", "PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 16px;
 }
 .filter-item-cost input {
@@ -199,7 +211,7 @@ a {
   background-color: transparent;
 }
 .sorting-result {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #000;
@@ -227,7 +239,7 @@ a {
   color: #000;
 }
 .result-hotel {
-  font-family: "pt_sansbold","PT Sans", sans-serif;
+  font-family: "pt_sansbold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #000;
