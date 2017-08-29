@@ -1,5 +1,4 @@
 body {
-  width: 1280px;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -14,7 +13,18 @@ a {
 }
 .wrapper {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; padding: 0;
 }
 .button {
   font: inherit;
@@ -70,12 +80,16 @@ a {
   color: #000;
 }
 .main-nav {
+  padding-left: 72px;
+  padding-right: 72px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   line-height: 26px;
   color: #000;
 }
 .site-navigation {
+  margin:0;
+  padding: 0;
   list-style: none;
 }
 .site-navigation a {
@@ -122,10 +136,13 @@ a {
   text-align: center;
 }
 .feature-town-text,
-.feature-bridge-text
- {
+.feature-bridge-text {
   color: #fff;
   background-color: #81b3d2;
+}
+.feature-town-text h3,
+.feature-bridge-text h3 {
+  font-size: 21px;
 }
 .product-list,
 .feature-list {
@@ -190,6 +207,9 @@ a {
 }
 .filter {
   color: #fff;
+  padding-left: 6%;
+  padding-right: 6%;
+  text-align: left;
   background-color: #81b3d2;
   background-image: url("../img/background-inner.jpg");
   background-position: center 20%;
@@ -198,6 +218,8 @@ a {
 }
 .filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 .filter legend {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -257,9 +279,135 @@ a {
 .result-hotel:active {
   color: #cacaca;
 }
+.result, .main-footer {
+  border-top: 1px solid #e5e5e5;
+}
+.result-rating span {
+  background-color: #f2f2f2;
+}
 .site-navigation {
   display: flex;
 }
 .site-navigation li{
   flex-basis: 240px;
+}
+.site-navigation li:nth-child(3) {
+  margin-left: 96px;
+  text-align: right;
+}
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+.site-navigation li:nth-child(2),
+.site-navigation li:first-child {
+  text-align: left;
+}
+.main-header {
+  position: relative;
+}
+.logo-sedona {
+  position: absolute;
+  top: 0;
+  left: 531px;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+.feature-town {
+  display: flex;
+}
+.feature-town-text {
+  flex-basis: 400px;
+}
+.feature-town-image {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+.product-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.product-item {
+  flex-basis: 400px;
+}
+.feature-bridge {
+  display: flex;
+}
+.feature-list {
+  display: flex;
+}
+.feature-item {
+  flex-basis: 400px;
+}
+.main-footer {
+  display: flex;
+  padding: 0 71px;
+}
+.main-footer div {
+  flex-basis: 400px;
+  text-align: center;
+}
+.filter-hotel {
+  display: flex;
+}
+.filter-hotel label {
+  display: block;
+}
+.filter-hotel .filter-type {
+  width: 138px;
+  margin-left: 115px;
+}
+.filter-input {
+  margin-top: 26px;
+}
+.filter-item-cost {
+  width: 318px;
+  margin-left: auto;
+}
+.filter-infrastructure {
+  width: 140px;
+}
+.sorting {
+  display: flex;
+  padding: 0 71px;
+}
+.sorting-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.sorting-option {
+  display: flex;
+  width: 239px;
+  margin: 0;
+  padding: 0;
+}
+.sorting-buttons {
+  margin-right: 0;
+}
+.result {
+  position: relative;
+  padding-left: 72px;
+}
+.result-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 259px;
+  position: relative;
+  margin: 30px 0;
+  padding-left: 165px;
+
+}
+.result-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.result-rating {
+  position: absolute;
+  bottom: 30px;
+  right: 71px;
 }

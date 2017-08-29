@@ -22,13 +22,13 @@
           <img src="img/logo.png" width="138" height="70" alt="Логотип">
         </a>
       </header>
-      <main class="conteiner">
+      <main class="conteiner inner-conteiner">
         <h1 class="visually-hidden">Выбор гостиницы</h1>
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter-hotel" action="/echo" method="get">
             <fieldset class="filter-infrastructure">
-              <legend>Инфраструктура</legend>
+              <legend>Инфраструктура:</legend>
               <label>
                 <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
                 Бассейн
@@ -43,7 +43,7 @@
               </label>
             </fieldset>
             <fieldset class="filter-type">
-              <legend>Тип жилья</legend>
+              <legend>Тип жилья:</legend>
               <label>
                 <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
                 Гостиница
@@ -59,10 +59,16 @@
             </fieldset>
             <div class="filter-item-cost">
               <p>Стоимость в сутки (р):</p>
-              <input class="cost-from" type="text" name="from" placeholder="от 0">
-              <input class="cost-to" type="text" name="to" placeholder="до 3000">
-              <input type="range" name="dayscount" min="0" max="3000">
-              <input type="submit" class="filter-button" value="Показать">
+              <div>
+                <input class="cost-from" type="text" name="from" placeholder="от 0">
+                <input class="cost-to" type="text" name="to" placeholder="до 3000">
+              </div>
+              <div>
+                <input type="range" name="dayscount" min="0" max="3000">
+              </div>
+              <div>
+                <input type="submit" class="filter-button" value="Показать">
+              </div>
             </div>
           </form>
         </section>
@@ -77,51 +83,57 @@
               <li><a href="#">По рейтингу</a></li>
             </ul>
           </div>
-          <div>
+          <div class="sorting-buttons">
             <a class="sorting-button-up" href="#">По возрастанию</a>
             <a class="sorting-button-down" href="#">По убыванию</a>
           </div>
         </section>
         <section class="result">
-          <h3><a class="result-hotel" href="#">Amara resort &amp; spa</a></h3>
-          <img src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort &amp; spa">
-          <div class="type-and-price">
-            <span>Гостиница</span>
-            <a class="button-detailed" href="#">Подробнее</a>
-          </div>
-          <div class="result-buttons">
-            <span>от 4000 р.</span>
-            <a class="button" href="#">Забронировать</a>
+          <div class="result-wrapper">
+            <h3><a class="result-hotel" href="#">Amara resort &amp; spa</a></h3>
+            <img class="result-image" src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort &amp; spa">
+            <div class="type-and-price">
+              <span>Гостиница</span>
+              <a class="button-detailed" href="#">Подробнее</a>
+            </div>
+            <div class="result-buttons">
+              <span>от 4000 р.</span>
+              <a class="button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="result-rating">
             <span>Рейтинг: 8,5</span>
           </div>
         </section>
         <section class="result">
-          <h3><a class="result-hotel" href="#">Desert Quail Inn</a></h3>
-          <img src="img/hotel-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-          <div class="type-and-price">
-            <span>Мотель</span>
-            <a class="button-detailed" href="#">Подробнее</a>
-          </div>
-          <div class="result-buttons">
-            <span>от 3000 р.</span>
-            <a class="button" href="#">Забронировать</a>
+          <div class="result-wrapper">
+            <h3><a class="result-hotel" href="#">Desert Quail Inn</a></h3>
+            <img class="result-image" src="img/hotel-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+            <div class="type-and-price">
+              <span>Мотель</span>
+              <a class="button-detailed" href="#">Подробнее</a>
+            </div>
+            <div class="result-buttons">
+              <span>от 3000 р.</span>
+              <a class="button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="result-rating">
             <span>Рейтинг: 8,9</span>
           </div>
         </section>
         <section class="result">
-          <h3><a class="result-hotel" href="#">Villas at poco diablo</a></h3>
-          <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at poco diablo">
-          <div class="type-and-price">
-            <span>Апартаменты</span>
-            <a class="button-detailed" href="#">Подробнее</a>
-          </div>
-          <div class="result-buttons">
-            <span>от 2000 р.</span>
-            <a class="button" href="#">Забронировать</a>
+          <div class="result-wrapper">
+            <h3><a class="result-hotel" href="#">Villas at poco diablo</a></h3>
+            <img class="result-image" src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at poco diablo">
+            <div class="type-and-price">
+              <span>Апартаменты</span>
+              <a class="button-detailed" href="#">Подробнее</a>
+            </div>
+            <div class="result-buttons">
+              <span>от 2000 р.</span>
+              <a class="button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="result-rating">
             <span>Рейтинг: 9,2</span>
