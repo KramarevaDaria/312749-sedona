@@ -13,8 +13,7 @@ a {
 }
 .wrapper {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: #fff;
 }
 .visually-hidden {
@@ -80,8 +79,7 @@ a {
   color: #000;
 }
 .main-nav {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 0 72px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   line-height: 26px;
@@ -103,7 +101,7 @@ a {
   color: #766357;
 }
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
 .background-top {
   position: relative;
@@ -207,8 +205,7 @@ a {
 }
 .filter {
   color: #fff;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding: 0 72px;
   text-align: left;
   background-color: #81b3d2;
   background-image: url("../img/background-inner.jpg");
@@ -254,7 +251,7 @@ a {
   color: #000;
 }
 .sorting-items a {
-  color: #cacaca;
+  opacity: 0.3;
   border-bottom: 1px dotted #81b3d2;
 }
 .sorting-items a:hover,
@@ -277,7 +274,7 @@ a {
   color: #81b3d2;
 }
 .result-hotel:active {
-  color: #cacaca;
+  opacity: 0.3;
 }
 .result, .main-footer {
   border-top: 1px solid #e5e5e5;
@@ -309,6 +306,7 @@ a {
   position: absolute;
   top: 0;
   left: 531px;
+  z-index: 1;
 }
 .conteiner {
   display: flex;
@@ -319,10 +317,11 @@ a {
 }
 .feature-town-text {
   flex-basis: 400px;
+  flex-shrink: 1;
 }
 .feature-town-image {
   flex-basis: 400px;
-  flex-grow: 1;
+  flex-shrink: 2;
 }
 .product-list {
   display: flex;
@@ -331,6 +330,7 @@ a {
 }
 .product-item {
   flex-basis: 400px;
+  flex-grow: 1;
 }
 .feature-bridge {
   display: flex;
@@ -343,10 +343,11 @@ a {
 }
 .main-footer {
   display: flex;
-  padding: 0 71px;
+  padding: 0 72px;
 }
 .main-footer div {
-  flex-basis: 400px;
+  flex-basis: 200px;
+  flex-grow: 1;
   text-align: center;
 }
 .filter-hotel {
@@ -371,18 +372,28 @@ a {
 }
 .sorting {
   display: flex;
+  align-items: flex-end;
   padding: 0 71px;
+  margin: 30px 0;
+}
+.sorting span {
+  margin-right: 50px;
 }
 .sorting-items {
   display: flex;
   margin: 0;
   padding: 0;
 }
+.sorting-items span {
+  margin-right: 41px;
+}
 .sorting-option {
-  display: flex;
-  width: 239px;
   margin: 0;
   padding: 0;
+}
+.sorting-option li {
+  display: inline;
+  margin-right: 31px;
 }
 .sorting-buttons {
   margin-right: 0;
@@ -395,11 +406,13 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 259px;
   position: relative;
+  width: 259px;
   margin: 30px 0;
   padding-left: 165px;
-
+}
+.result-wrapper h3 {
+  margin: 0;
 }
 .result-image {
   position: absolute;
@@ -409,5 +422,5 @@ a {
 .result-rating {
   position: absolute;
   bottom: 30px;
-  right: 71px;
+  right: 72px;
 }
