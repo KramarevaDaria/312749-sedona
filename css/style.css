@@ -16,14 +16,19 @@ a {
   margin: 0 auto;
   background-color: #fff;
 }
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; padding: 0;
+  overflow: hidden;
 }
 .button {
   font: inherit;
@@ -403,8 +408,6 @@ a {
   padding-left: 72px;
 }
 .result-wrapper {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   position: relative;
   width: 259px;
@@ -423,4 +426,19 @@ a {
   position: absolute;
   bottom: 30px;
   right: 72px;
+}
+.result-hotel {
+  flex-basis: 210px;
+  margin-bottom: 12px;
+}
+.type-and-price {
+  display: inline-block;
+  width: 111px;
+}
+.type-and-price span {
+  margin-bottom: 17px;
+}
+.result-buttons {
+  display: inline-block;
+  width: 143px;
 }
