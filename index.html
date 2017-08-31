@@ -32,8 +32,8 @@
         <section class="feature feature-town">
           <h2 class="visually-hidden">Улица Седоны</h2>
           <div class="feature-town-text">
-            <h3 class="feature-title">Настоящий<br> городок</h3>
-            <p>&ndash;№1&ndash;</p>
+            <h3 class="feature-title">Настоящий городок</h3>
+            <span>&ndash;№1&ndash;</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь!</p>
           </div>
           <div class="feature-town-image">
@@ -43,15 +43,15 @@
         <section class="feature products">
           <h2 class="visually-hidden">Седона рекомендует</h2>
           <ul class="product-list">
-            <li class="product-item">
+            <li class="product-item product-item-home">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-food">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-souvenir">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
@@ -62,7 +62,7 @@
             <img src="img/image-2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
           <div class="feature-bridge-text">
-            <h3 class="feature-bridge-title">Там есть<br> мост дьявола</h3>
+            <h3 class="feature-bridge-title">Там есть мост дьявола</h3>
             <p>&ndash;№2&ndash;</p>
             <p>
               Да, по нему можно пройти! Eсли конечно, вы осмелитесь
@@ -72,23 +72,23 @@
         <section class="feature features-list">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="feature-list">
-            <li class="feature-item">
+            <li class="feature-item feature-square">
               <h3>Небольшая площадь</h3>
-              <p>&ndash;№3&ndash;</p>
+              <span>&ndash;№3&ndash;</span>
               <p>
-                Все достопримеча- тельности находятся очень близко
+                Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-road">
               <h3>Красивая дорога</h3>
-              <p>&ndash;№4&ndash;</p>
+              <span>&ndash;№4&ndash;</span>
               <p>
                 Ехать в седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-tourist">
               <h3>Мало туристов</h3>
-              <p>&ndash;№5&ndash;</p>
+              <span>&ndash;№5&ndash;</span>
               <p>
                 Большинство едет в Гранд Каньон и толпится там
               </p>
@@ -107,11 +107,13 @@
               <label>Дата заезда:
                 <input type="text" name="date-in" value="" placeholder="24 апреля 2017">
               </label>
+              <button class="calendar">Календарь</button>
             </p>
             <p class="search-item">
               <label>Дата выезда:
                 <input type="text" name="date-out"  value="" placeholder="04 июля 2017">
               </label>
+              <button class="calendar">Календарь</button>
             </p>
             <p class="search-item">
               <label for="grown">Взрослые:</label>
