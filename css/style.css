@@ -15,6 +15,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
+  box-shadow: 0 0 10px 5px #dbdbdb;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -63,10 +64,6 @@ input[type="radio"].visually-hidden {
 .button-detailed:active {
   color: #94b9d2;
   background-color: #5496bd;
-}
-.search-button {
-  font-size: 21px;
-  line-height: 26px;
 }
 .title-and-reason h1 {
   font-size: 21px;
@@ -149,7 +146,7 @@ input[type="radio"].visually-hidden {
   flex-shrink: 1;
 }
 .feature-town-text h3 {
-  margin: 50px 138px 24px;;
+  margin-top: 46px;
 }
 .feature-town-text p {
   margin: 24px 60px 60px;
@@ -215,6 +212,12 @@ input[type="radio"].visually-hidden {
   flex-basis: 400px;
   flex-shrink: 1;
 }
+.feature-bridge-title {
+  margin-top: 46px;
+}
+.feature-bridge-text p {
+  margin: 24px 60px 60px;
+}
 .feature-bridge-image {
   flex-basis: 400px;
   flex-shrink: 2;
@@ -230,7 +233,7 @@ input[type="radio"].visually-hidden {
   flex-basis: 400px;
 }
 .feature-item h3 {
-  margin: 50px 141px 24px;
+  margin-top: 50px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -256,16 +259,36 @@ input[type="radio"].visually-hidden {
 .search-preview {
   text-align: center;
 }
-.search h2 {
+.search-preview h2 {
+  margin: 50px 0 28px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   color: #000;
 }
 .search-text {
+  margin: 0;
+  margin-bottom: 48px;
   font-size: 14px;
   line-height: 24px;
   color: #333;
+}
+.search-button {
+  padding: 30px 0;
+  width: 568px;
+  font-size: 21px;
+  line-height: 26px;
+}
+.search-map {
+  position: relative;
+}
+.search-popup {
+  position: absolute;
+  top: 0;
+  left: 316px;
+  width: 568px;
+  z-index: 5;
+  background-color: #fff;
 }
 .search-item {
   font-size: 14px;
@@ -286,6 +309,13 @@ input[type="radio"].visually-hidden {
 .search-item input:focus {
   background-color: #fff;
   border: 1px solid #e5e5e5;
+}
+.button-popup {
+  margin-bottom: 55px;
+  padding: 15px 0;
+  width: 459px;
+  font-size: 21px;
+  line-height: 26px;
 }
 .main-footer {
   color: #000;

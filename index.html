@@ -32,7 +32,7 @@
         <section class="feature feature-town">
           <h2 class="visually-hidden">Улица Седоны</h2>
           <div class="feature-town-text">
-            <h3 class="feature-title">Настоящий городок</h3>
+            <h3 class="feature-title">Настоящий<br> городок</h3>
             <span>&ndash;№1&ndash;</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь!</p>
           </div>
@@ -62,8 +62,8 @@
             <img src="img/image-2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
           <div class="feature-bridge-text">
-            <h3 class="feature-bridge-title">Там есть мост дьявола</h3>
-            <p>&ndash;№2&ndash;</p>
+            <h3 class="feature-bridge-title">Там есть<br> мост дьявола</h3>
+            <span>&ndash;№2&ndash;</span>
             <p>
               Да, по нему можно пройти! Eсли конечно, вы осмелитесь
             </p>
@@ -73,21 +73,21 @@
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="feature-list">
             <li class="feature-item feature-square">
-              <h3>Небольшая площадь</h3>
+              <h3>Небольшая<br> площадь</h3>
               <span>&ndash;№3&ndash;</span>
               <p>
                 Все достопримечательности находятся очень близко
               </p>
             </li>
             <li class="feature-item feature-road">
-              <h3>Красивая дорога</h3>
+              <h3>Красивая<br> дорога</h3>
               <span>&ndash;№4&ndash;</span>
               <p>
                 Ехать в седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class="feature-item feature-tourist">
-              <h3>Мало туристов</h3>
+              <h3>Мало<br> туристов</h3>
               <span>&ndash;№5&ndash;</span>
               <p>
                 Большинство едет в Гранд Каньон и толпится там
@@ -95,14 +95,15 @@
             </li>
           </ul>
         </section>
-        <section class="search">
-          <div class=search-preview>
-            <h2>Заинтересовались?</h2>
-            <p class="search-text">Укажите предполагаемые даты поездки,<br>
-              и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button search-button">Поиск гостиницы в Седоне</button>
-          </div>
-          <form action="/echo" method="post">
+        <section class="search-preview">
+          <h2>Заинтересовались?</h2>
+          <p class="search-text">Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button search-button">Поиск гостиницы в Седоне</button>
+        </section>
+        <div class="search-map">
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+          <form  class="search-popup" action="/echo" method="post">
             <p class="search-item">
               <label>Дата заезда:
                 <input type="text" name="date-in" value="" placeholder="24 апреля 2017">
@@ -127,11 +128,8 @@
                 <input type="text" name="kid" id="kid" placeholder="0">
                 <input type="button" value="+">
             </p>
-            <button class="button-detailed search-button" type="submit">Найти</button>
+            <button class="button-detailed button-popup" type="submit">Найти</button>
           </form>
-        </section>
-        <div class="map">
-          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </div>
       </main>
       <footer class="main-footer">
