@@ -313,6 +313,7 @@ input[type="radio"].visually-hidden {
   width: 568px;
   font-size: 21px;
   line-height: 26px;
+  z-index: 10;
 }
 .search-map {
   position: relative;
@@ -331,6 +332,7 @@ input[type="radio"].visually-hidden {
   padding: 55px;
   box-sizing: border-box;
   background-color: #fff;
+  box-shadow: 0 0 20px 0 #c2c2c2;
 }
 .search-item {
   width: 458px;
@@ -348,16 +350,24 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 .search-item-grown {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 227px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 .search-item-kids {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 179px;
   margin: 0;
   margin-bottom: 54px;
 }
 .search-item input {
   box-sizing: border-box;
-  padding: 8px 13px;
+  padding: 6px 13px;
   font: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -385,12 +395,26 @@ input[type="radio"].visually-hidden {
 .search-item-grown input {
   width: 38px;
   text-align: center;
-  margin-left: -4px;
 }
 .search-item-kids input {
   width: 38px;
   text-align: center;
-  margin-left: -4px;
+}
+.symbol {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+.symbol:hover {
+  background-color: #ebebeb;
+}
+.symbol:focus {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
 }
 .search-item-grown label {
   display: inline-block;
@@ -425,7 +449,6 @@ input[type="radio"].visually-hidden {
 }
 .main-footer {
   display: flex;
-  /*padding: 0 72px;*/
   color: #000;
   background-color: #fff;
 }
