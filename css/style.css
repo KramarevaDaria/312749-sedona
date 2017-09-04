@@ -416,6 +416,13 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
   border: 1px solid #ebebeb;
 }
+.symbol:hover .icon,
+.symbol:focus .icon {
+  stroke: #000;
+}
+.symbol:active .icon {
+  stroke: #81b3d2;
+}
 .search-item-grown label {
   display: inline-block;
   margin-right: 41px;
@@ -494,7 +501,7 @@ input[type="radio"].visually-hidden {
 .social-button:focus {
   background-color: #669ec0;
 }
-.social-button:active svg {
+.social-button:active .icon-social {
   fill: #88b6d1;
 }
 .footer-logo {
@@ -517,6 +524,13 @@ input[type="radio"].visually-hidden {
 .footer-wrapper:active {
   opacity: 0.3;
 }
+.footer-logo-link:hover .icon-logo,
+.footer-logo-link:focus .icon-logo {
+  fill: #98c1da;
+}
+.footer-logo-link:active .icon-logo {
+  fill: #bdbbbc;
+}
 .filter {
   color: #fff;
   padding: 0 72px;
@@ -529,6 +543,8 @@ input[type="radio"].visually-hidden {
 }
 .filter-hotel {
   display: flex;
+  margin-top: 29px;
+  margin-bottom: 31px;
 }
 .filter-hotel .filter-type {
   width: 138px;
@@ -548,8 +564,32 @@ input[type="radio"].visually-hidden {
 .filter-hotel label {
   display: block;
 }
-.filter-input {
+.filter-checkbox {
+  position: relative;
   margin-top: 26px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.filter-checkbox input[type="checkbox"] +
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+.filter-checkbox input[type="checkbox"]:focus +
+.checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.filter-checkbox input[type="checkbox"]:checked +
+.checkbox-indicator {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
 }
 .filter-item-cost {
   width: 318px;
@@ -668,4 +708,8 @@ input[type="radio"].visually-hidden {
 .result-buttons span {
   display: inline-block;
   margin-bottom: 15px;
+}
+.result .button-detailed,
+.result .button {
+  padding: 3px 17px;
 }
