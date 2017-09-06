@@ -36,8 +36,8 @@ input[type="radio"].visually-hidden {
   font: inherit;
   text-align: center;
   vertical-align: center;
-  color: #fff;
   text-transform: uppercase;
+  color: #fff;
   background-color: #766357;
   border: none;
 }
@@ -54,8 +54,8 @@ input[type="radio"].visually-hidden {
   font: inherit;
   text-align: center;
   vertical-align: center;
-  color: #fff;
   text-transform: uppercase;
+  color: #fff;
   background-color: #81b3d2;
   border: none;
 }
@@ -69,9 +69,7 @@ input[type="radio"].visually-hidden {
 }
 .title-and-reason h1 {
   font-size: 21px;
-  /*font-weight: bold;*/
   line-height: 26px;
-  color: #000;
 }
 .main-header {
   position: relative;
@@ -128,7 +126,6 @@ input[type="radio"].visually-hidden {
 }
 .background-top {
   position: relative;
-  width: 100%;
   height: 508px;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
@@ -136,19 +133,16 @@ input[type="radio"].visually-hidden {
 }
 .background-top::before {
   content: url("../img/top-words.png");
+  position: relative;
   display: block;
-  position: absolute;
+  text-align: center;
   top: 76px;
-  left: 371px;
 }
 .background-top::after {
   content: url("../img/top-mask.png");
+  position: relative;
   display: block;
-  position: absolute;
-  bottom: 0px;
-  left:0;
-  width: 100%;
-  height: 57px;
+  top: 93px;
 }
 .title-and-reason {
   padding: 60px 0;
@@ -183,7 +177,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 24px;
 }
 .feature-town-text p {
-  margin-bottom: 0;
+  margin: 0;
   margin-top: 21px;
 }
 .feature-town-image {
@@ -249,7 +243,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 24px;
 }
 .feature-bridge-text p {
-  margin-bottom: 0;
+  margin: 0;
   margin-top: 21px;
 }
 .feature-bridge-image {
@@ -267,9 +261,13 @@ input[type="radio"].visually-hidden {
 }
 .feature-item {
   flex-basis: 400px;
+  padding: 50px 0 60px 0;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 .feature-item h3 {
-  margin-top: 50px;
+  margin:0;
+  margin-bottom: 24px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -277,20 +275,19 @@ input[type="radio"].visually-hidden {
 }
 .feature-item p {
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 60px;
+  margin-top: 21px;
 }
-.feature-square p {
-  margin-left: 95px;
-  margin-right: 95px;
+.feature-square {
+  padding-left: 95px;
+  padding-right: 95px;
 }
-.feature-road p {
-  margin-left: 68px;
-  margin-right: 68px;
+.feature-road {
+  padding-left: 68px;
+  padding-right: 68px;
 }
-.feature-tourist p {
-  margin-left: 70px;
-  margin-right: 70px;
+.feature-tourist {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .search-preview {
   text-align: center;
@@ -298,12 +295,9 @@ input[type="radio"].visually-hidden {
 .search-preview h2 {
   margin: 50px 0 28px;
   font-size: 30px;
-  font-weight: bold;
   line-height: 36px;
-  color: #000;
 }
 .search-text {
-  margin: 0;
   margin-bottom: 48px;
   font-size: 14px;
   line-height: 24px;
@@ -314,7 +308,6 @@ input[type="radio"].visually-hidden {
   width: 568px;
   font-size: 21px;
   line-height: 26px;
-  z-index: 10;
 }
 .search-map {
   position: relative;
@@ -329,7 +322,6 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 316px;
   width: 568px;
-  z-index: 5;
   padding: 55px;
   box-sizing: border-box;
   background-color: #fff;
@@ -472,10 +464,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  flex-basis: 400px;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
 }
 .footer-social {
   display: flex;
@@ -709,11 +700,8 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 .sorting-items ul {
+  margin-left: 41px;
   list-style: none;
-}
-.sorting-items span {
-  margin-right: 41px;
-  color: #000;
 }
 .sorting-items a {
   opacity: 0.3;
