@@ -138,7 +138,7 @@ input[type="radio"].visually-hidden {
   content: url("../img/top-mask.png");
   position: relative;
   display: block;
-  top: 93px;
+  top: 94px;
 }
 .title-and-reason {
   padding: 60px 0;
@@ -772,7 +772,7 @@ input[type="radio"].visually-hidden {
 .result-rating {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   /*flex-basis: 115px;*/
 }
 .hotel-rating {
