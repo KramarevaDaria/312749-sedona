@@ -120,10 +120,6 @@ input[type="radio"].visually-hidden {
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.conteiner {
-  display: flex;
-  flex-direction: column;
-}
 .background-top {
   position: relative;
   height: 508px;
@@ -531,8 +527,8 @@ input[type="radio"].visually-hidden {
 }
 .filter-hotel {
   display: flex;
-  margin-top: 29px;
-  margin-bottom: 31px;
+  padding-top: 29px;
+  padding-bottom: 31px;
 }
 .filter-hotel .filter-type {
   width: 138px;
