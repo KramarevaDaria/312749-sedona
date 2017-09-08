@@ -775,7 +775,8 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.sorting-items span {
+.sorting-items p {
+  margin: 0;
   color: #000000;
 }
 
