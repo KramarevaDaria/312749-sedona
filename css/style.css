@@ -732,6 +732,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
+  transform: scale(1.1);
   background: #1c4f80;
 }
 
@@ -832,6 +833,10 @@ input[type="radio"].visually-hidden {
 
 .sorting-arrow-down {
     margin-left: 11px;
+}
+
+.sorting-arrow-active .arrow{
+  fill:  #81b3d2;
 }
 
 .result {
