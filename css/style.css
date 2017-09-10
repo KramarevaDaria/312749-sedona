@@ -762,7 +762,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-result {
-  margin-right: 50px;
+  margin-right: 49px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -836,23 +836,26 @@ input[type="radio"].visually-hidden {
 
 .result {
   display: flex;
-  padding: 30px 72px;
+  padding: 0 72px;
 }
 
 .result img {
   flex-basis: 135px;
   width: 135px;
   height: 90px;
+  padding: 30px 0;
 }
 
 .result-wrapper {
   flex-basis: 260px;
   flex-grow: 1;
   margin-left: 30px;
+  padding: 25px 0 30px;
 }
 
 .result-wrapper h3 {
   margin: 0;
+  margin-bottom: 6px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -907,6 +910,7 @@ input[type="radio"].visually-hidden {
   flex-basis: 115px;
   justify-content:space-between;
   align-items: flex-end;
+  padding: 30px 0
 }
 
 .result-rating p {
